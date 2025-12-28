@@ -33,6 +33,7 @@
             <h3>Contents</h3>
             <ul>
                 <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#notifications">Notifications</a></li>
                 <li><a href="#accounts">Accounts</a></li>
                 <li><a href="#transactions">Transactions</a></li>
                 <li><a href="#ai-upload">AI Statement Upload</a></li>
@@ -87,6 +88,32 @@
                 </ul>
             </section>
 
+            <section id="notifications" class="doc-section">
+                <h2>🔔 Notifications</h2>
+                <p>Stay updated with critical alerts. Notifications are available for <strong>everyone</strong> (Free &
+                    Premium).</p>
+
+                <div class="tip-box">
+                    <strong>📍 Where to find them:</strong> Click the <strong>Bell Icon</strong> in the top-right corner
+                    of the app.
+                </div>
+
+                <h3>When will I get a notification?</h3>
+                <p>The system sends alerts for specific events:</p>
+                <ul>
+                    <li><strong>Budget Warnings:</strong> When you exceed <strong>90%</strong> or <strong>100%</strong>
+                        of a category limit.</li>
+                    <li><strong>Recurring Transactions:</strong> When a scheduled transaction (bill, subscription) is
+                        processed.</li>
+                    <li><strong>Savings Goals:</strong> When an automatic goal allocation is made.</li>
+                    <li><strong>Family Updates:</strong> When someone accepts your invite or leaves the family.</li>
+                    <li><strong>Subscription:</strong> When your Free Trial is ending (3 days prior).</li>
+                </ul>
+
+                <p><strong>Note:</strong> We do not send marketing spam. These are strictly functional alerts to help
+                    you manage your money.</p>
+            </section>
+
             <section id="accounts" class="doc-section">
                 <h2>🏦 Accounts Management</h2>
                 <p>Manage all your bank accounts, credit cards, and savings accounts in one place.</p>
@@ -124,26 +151,6 @@
                     <strong>⚠️ Important:</strong> Accurate "Safe to Spend" relies on correct Initial Balances. Always
                     use the Closing Balance from your bank statement for the date prior to your transaction history.
                 </div>
-
-                <h3>Account Types</h3>
-                <ul>
-                    <li><strong>Bank Account:</strong> Checking, savings, or money market accounts (Asset)</li>
-                    <li><strong>Credit Card:</strong> Credit card accounts (Liability/Debt)</li>
-                </ul>
-
-                <h3>Editing Accounts</h3>
-                <p>Click the ✏️ icon next to any account to:</p>
-                <ul>
-                    <li>Change account name</li>
-                    <li>Update current balance</li>
-                    <li>Adjust initial balance and date</li>
-                </ul>
-
-                <h3>Deleting Accounts</h3>
-                <div class="warning-box">
-                    <strong>⚠️ Warning:</strong> Deleting an account also deletes all its transactions. This cannot be
-                    undone!
-                </div>
             </section>
 
             <section id="transactions" class="doc-section">
@@ -153,68 +160,38 @@
                 <h3>Adding a Transaction Manually</h3>
                 <ol>
                     <li>Click <strong>Add → Transaction</strong></li>
-                    <li>Select <strong>transaction type:</strong>
-                        <ul>
-                            <li><strong>Expense:</strong> Money spent</li>
-                            <li><strong>Income:</strong> Money received</li>
-                            <li><strong>Internal Transfer:</strong> Moving money between your accounts</li>
-                        </ul>
-                    </li>
-                    <li>Fill in details:
-                        <ul>
-                            <li><strong>Date:</strong> Transaction date</li>
-                            <li><strong>Amount:</strong> Transaction amount</li>
-                            <li><strong>Account:</strong> Which account</li>
-                            <li><strong>Category:</strong> What type of expense/income</li>
-                            <li><strong>Note:</strong> Description</li>
-                        </ul>
-                    </li>
+                    <li>Select <strong>transaction type:</strong> (Expense, Income, Internal Transfer)</li>
+                    <li>Fill in details (Date, Amount, Account, Category, Note)</li>
                     <li>Click <strong>"Add Transaction"</strong></li>
                 </ol>
 
                 <h3>Internal Transfers</h3>
-                <p>When moving money between your own accounts:</p>
-                <ul>
-                    <li>Select <strong>"Internal Transfer"</strong></li>
-                    <li>Choose <strong>source account</strong> (where money comes from)</li>
-                    <li>Choose <strong>target account</strong> (where money goes)</li>
-                    <li>Enter amount and date</li>
-                </ul>
-                <p>The app creates two linked transactions automatically (debit and credit).</p>
-
-                <h3>Editing Transactions</h3>
-                <p>Click the ✏️ icon next to any transaction to modify it.</p>
-
-                <h3>Deleting Transactions</h3>
-                <p>Two ways to delete:</p>
-                <ul>
-                    <li><strong>Single:</strong> Click ❌ next to transaction</li>
-                    <li><strong>Bulk:</strong> Check multiple transactions → Click "Delete Selected"</li>
-                </ul>
-
-                <h3>Searching & Filtering</h3>
-                <p>Use the Transaction Audit section to:</p>
-                <ul>
-                    <li>Search by description</li>
-                    <li>Filter by category</li>
-                    <li>Filter by account</li>
-                    <li>Filter by date range</li>
-                </ul>
+                <p>When moving money between your own accounts, use "Internal Transfer" to create linked debit/credit
+                    entries.</p>
 
                 <h3>Recurring Transactions</h3>
-                <p>Set up automatic monthly transactions:</p>
+                <p>Set up automatic monthly transactions (Rent, Netflix, Gym).</p>
+
+                <div class="info-box">
+                    <strong>Plan Limits:</strong>
+                    <ul>
+                        <li><strong>Free Plan:</strong> Max 10 Recurring Transactions.</li>
+                        <li><strong>Premium Plan:</strong> Unlimited Recurring Transactions.</li>
+                    </ul>
+                </div>
+
+                <div class="tip-box">
+                    <strong>⏳ Processing Time:</strong> Our system scans for recurring transactions
+                    <strong>daily</strong>. If you set a transaction for today, it might appear a few hours after
+                    midnight. Please be patient!
+                </div>
+
                 <ol>
                     <li>Click <strong>Add → Recurring Transaction</strong></li>
                     <li>Fill in transaction details</li>
                     <li>Set <strong>recurrence day</strong> (1-31)</li>
-                    <li>Choose <strong>status:</strong>
-                        <ul>
-                            <li><strong>Active:</strong> Auto-creates transactions</li>
-                            <li><strong>Paused:</strong> Temporarily disabled</li>
-                        </ul>
-                    </li>
+                    <li>Choose <strong>status:</strong> Active or Paused</li>
                 </ol>
-                <p>The app automatically creates transactions on the specified day each month.</p>
             </section>
 
             <section id="ai-upload" class="doc-section">
@@ -236,18 +213,6 @@
                     <li>You review and confirm</li>
                 </ol>
 
-                <h3>Uploading a Statement</h3>
-                <ol>
-                    <li>Click <strong>AI Statement Upload</strong></li>
-                    <li>Click <strong>"Upload Statement"</strong></li>
-                    <li>Select your <strong>account</strong></li>
-                    <li>Upload <strong>PDF or image</strong> (JPG, PNG)</li>
-                    <li>Wait 10-30 seconds for processing</li>
-                    <li>Review extracted transactions</li>
-                    <li>Edit any incorrect categories</li>
-                    <li>Click <strong>"Confirm & Add All"</strong></li>
-                </ol>
-
                 <h3>Validation & Scoring</h3>
                 <div class="warning-box">
                     <strong>⚠️ Requirement:</strong> Statement must have an <strong>Account Summary</strong> table
@@ -258,61 +223,16 @@
                     </li>
                     <li><strong>&lt; 70% Score:</strong> Summary likely missing. Manually check transaction counts and
                         categories.</li>
-                    <li><strong>Correction:</strong> If score is low, delete the statement and retry (ensure clear
-                        image). Max 3 attempts recommended.</li>
-                </ul>
-
-                <h3>Supported Formats</h3>
-                <ul>
-                    <li>PDF statements (most common)</li>
-                    <li>Image files (JPG, PNG)</li>
-                    <li>Multi-page statements</li>
-                    <li>Bank accounts and credit cards</li>
-                </ul>
-
-                <h3>Privacy & Security</h3>
-                <ul>
-                    <li>Original PDF is <strong>permanently deleted</strong> after processing</li>
-                    <li>Google does NOT store or train on your data</li>
-                    <li>Only extracted transactions are saved</li>
+                    <li><strong>Correction:</strong> If score is low, delete the statement and retry. Max 3 attempts
+                        recommended.</li>
                 </ul>
             </section>
 
             <section id="budget-limits" class="doc-section">
                 <h2>📏 Budget Limits</h2>
                 <p>Set monthly spending limits for each category and track your progress.</p>
-
-                <h3>Creating a Budget Limit</h3>
-                <ol>
-                    <li>Go to <strong>Budget → Budget Limits</strong></li>
-                    <li>Click <strong>"+ Add Budget Limit"</strong></li>
-                    <li>Select a <strong>category</strong></li>
-                    <li>Enter your <strong>monthly limit</strong></li>
-                    <li>Click <strong>"Save"</strong></li>
-                </ol>
-
-                <h3>Viewing Budget Status</h3>
-                <p>The Budget Limits page shows:</p>
-                <ul>
-                    <li><strong>Category name</strong></li>
-                    <li><strong>Limit:</strong> Your monthly budget</li>
-                    <li><strong>Spent:</strong> How much you've spent this month</li>
-                    <li><strong>Remaining:</strong> Budget left</li>
-                    <li><strong>Progress bar:</strong> Visual indicator</li>
-                </ul>
-
-                <h3>Budget Warnings</h3>
                 <p><strong>Note:</strong> Alerts (90% / 100%) are based on the <strong>Calendar Month</strong>, not your
-                    Pay Cycle. This ensures bills are tracked correctly regardless of pay date.</p>
-                <p>The progress bar changes color:</p>
-                <ul>
-                    <li><strong>Green:</strong> Under 70% of budget</li>
-                    <li><strong>Yellow:</strong> 70-90% of budget</li>
-                    <li><strong>Red:</strong> Over 90% or exceeded</li>
-                </ul>
-
-                <h3>Editing & Deleting</h3>
-                <p>Click ✏️ to edit or ❌ to delete any budget limit.</p>
+                    Pay Cycle.</p>
             </section>
 
             <section id="savings-goals" class="doc-section">
@@ -321,106 +241,66 @@
 
                 <div class="tip-box">
                     <strong>💡 Pro Tip:</strong> Keep your Goal Name the same as your bank transaction description
-                    (e.g., "Transfer to Aesop Settings"). This helps you identify them easily.
+                    (e.g., "Transfer to Aesop Settings").
                 </div>
 
                 <h3>Physical vs Virtual Goals</h3>
-                <table>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Physical Goal</th>
-                        <th>Virtual Goal</th>
-                    </tr>
-                    <tr>
-                        <td>Money Location</td>
-                        <td>Separate savings account</td>
-                        <td>Still in checking account</td>
-                    </tr>
-                    <tr>
-                        <td>Transfer Required</td>
-                        <td>Yes - you manually transfer</td>
-                        <td>No - mental allocation only</td>
-                    </tr>
-                    <tr>
-                        <td>Safe to Spend Impact</td>
-                        <td>Reduces when transferred</td>
-                        <td>Reduces when allocated</td>
-                    </tr>
-                    <tr>
-                        <td>Best For</td>
-                        <td>Long-term savings, emergency funds</td>
-                        <td>Short-term goals, bill savings</td>
-                    </tr>
-                </table>
-
-                <h3>Creating a Savings Goal</h3>
-                <ol>
-                    <li>Go to <strong>Budget → Savings Goals</strong></li>
-                    <li>Click <strong>"+ Create Goal"</strong></li>
-                    <li>Choose <strong>goal type</strong> (Physical or Virtual)</li>
-                    <li>Fill in:
-                        <ul>
-                            <li><strong>Goal Name:</strong> e.g., "Emergency Fund"</li>
-                            <li><strong>Target Amount:</strong> Your goal</li>
-                            <li><strong>Per-Cycle Allocation:</strong> How much to save each pay cycle</li>
-                            <li><strong>Deduction Day:</strong> Which day of cycle to save (1-31)</li>
-                        </ul>
-                    </li>
-                    <li>For Physical Goals: Select source and target accounts</li>
-                    <li>For Virtual Goals: Select source account</li>
-                    <li>Click <strong>"Create Goal"</strong></li>
-                </ol>
-
-                <h3>Tracking Progress</h3>
-                <p>The Savings Goals page shows:</p>
-                <ul>
-                    <li><strong>Progress bar:</strong> Visual progress toward goal</li>
-                    <li><strong>Current amount:</strong> How much saved</li>
-                    <li><strong>Remaining:</strong> Amount left to reach goal</li>
-                    <li><strong>Next deduction date:</strong> When to save next</li>
-                    <li><strong>Transfer/Allocation status:</strong> Whether you've funded it this cycle</li>
-                </ul>
+                <p>See <a href="getting-started.html#step6">Getting Started</a> for a detailed comparison.</p>
 
                 <h3>Physical Goal Actions</h3>
                 <ul>
                     <li><strong>⚡ Fund Transfer:</strong> Log a manual transfer you made.</li>
-                    <li><strong>Important:</strong> If the transaction already exists in your uploaded Source Account
-                        statement (as a debit), <strong>uncheck the "Source Side" box</strong>. Only check "Target
-                        Side". This prevents duplicate transactions.</li>
-                    <li>View transfer history</li>
+                    <li><strong>Important:</strong> If the transaction exists in your statement, <strong>uncheck "Source
+                            Side"</strong> to avoid duplicates.</li>
                 </ul>
 
                 <h3>Virtual Goal Actions</h3>
                 <ul>
-                    <li><strong>⚡ Quick Fund:</strong> Allocate money to this goal.</li>
-                    <li>Creates an internal transfer transaction automatically.</li>
-                    <li>Reduces your "Safe to Spend" without moving real money.</li>
-                    <li>View allocation history</li>
+                    <li><strong>⚡ Quick Fund:</strong> Allocate money (creates internal ledger entry).</li>
                 </ul>
-
-                <h3>Pausing Goals</h3>
-                <p>Edit a goal and check <strong>"Pause Goal"</strong> to temporarily stop tracking without deleting it.
-                </p>
             </section>
 
             <section id="reports" class="doc-section">
-                <h2>📊 Reports (Premium)</h2>
-                <p>Advanced analytics and spending insights.</p>
+                <h2>📊 Reports</h2>
+                <p>Analyze your spending habits with visual reports.</p>
 
-                <div class="warning-box">
-                    <strong>⚠️ Premium Feature:</strong> Advanced reports require Premium subscription.
-                </div>
-
-                <h3>Available Reports</h3>
-                <ul>
-                    <li><strong>Spending Trends:</strong> Month-over-month comparison</li>
-                    <li><strong>Category Breakdown:</strong> Where your money goes</li>
-                    <li><strong>Income vs Expenses:</strong> Financial health overview</li>
-                    <li><strong>Savings Rate:</strong> How much you're saving</li>
-                </ul>
-
-                <h3>Exporting Data</h3>
-                <p>Premium users can export all transactions as CSV for use in Excel or other tools.</p>
+                <h3>Free vs Premium Reports</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Report Type</th>
+                            <th>Free Plan</th>
+                            <th>Premium Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Income vs Expense</strong></td>
+                            <td>✅ Basic Chart</td>
+                            <td>✅ Detailed Chart</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Spending Trends</strong></td>
+                            <td>❌</td>
+                            <td>✅ <strong>Month-over-Month</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Category Breakdown</strong></td>
+                            <td>❌</td>
+                            <td>✅ <strong>Pie Charts & Drill-down</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Savings Rate</strong></td>
+                            <td>❌</td>
+                            <td>✅ <strong>Track % Saved</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Export</strong></td>
+                            <td>❌</td>
+                            <td>✅ <strong>CSV Export</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
             <section id="family" class="doc-section">
@@ -439,105 +319,44 @@
                     <tbody>
                         <tr>
                             <td><strong>Family Members</strong></td>
-                            <td>Up to 5 members</td>
-                            <td>Up to 5 members</td>
+                            <td>Up to 5</td>
+                            <td>Up to 5</td>
                         </tr>
                         <tr>
                             <td><strong>Shared Features</strong></td>
-                            <td>✅ Shared Dashboard & Goals</td>
-                            <td>✅ Shared Dashboard & Goals</td>
+                            <td>✅ Dashboard, Goals</td>
+                            <td>✅ Dashboard, Goals</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Notifications</strong></td>
+                            <td>✅ In-App</td>
+                            <td>✅ In-App</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recurring Txns</strong></td>
+                            <td>Limited (10)</td>
+                            <td><strong>Unlimited</strong></td>
                         </tr>
                         <tr>
                             <td><strong>Accounts</strong></td>
-                            <td>1 Account per person</td>
-                            <td><strong>Unlimited Accounts</strong> per person</td>
+                            <td>1 per Person</td>
+                            <td><strong>Unlimited</strong></td>
                         </tr>
                         <tr>
-                            <td><strong>Categories</strong></td>
-                            <td>5 Shared Categories</td>
-                            <td><strong>Unlimited Categories</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>AI Statement Upload</strong></td>
-                            <td>❌ Manual Entry Only</td>
-                            <td>✅ <strong>Auto-Extract</strong> (~10/mo)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Advanced Reports</strong></td>
-                            <td>❌ Basic</td>
-                            <td>✅ <strong>Full Trends & Insights</strong></td>
+                            <td><strong>Reports</strong></td>
+                            <td>Basic</td>
+                            <td><strong>Full Analytics</strong></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h3>Creating a Family</h3>
-                <ol>
-                    <li>Go to <strong>Family</strong> in navigation</li>
-                    <li>Click <strong>"Create Family"</strong></li>
-                    <li>Enter your <strong>family name</strong></li>
-                    <li>Copy the <strong>invite code</strong></li>
-                    <li>Share code with family members</li>
-                </ol>
-
-                <h3>Joining a Family</h3>
-                <ol>
-                    <li>Create your account</li>
-                    <li>Go to <strong>Family → Join Family</strong></li>
-                    <li>Enter the <strong>invite code</strong></li>
-                    <li>Click <strong>"Join"</strong></li>
-                </ol>
-
-                <h3>Family Features</h3>
-                <ul>
-                    <li><strong>Shared Dashboard:</strong> See combined family finances</li>
-                    <li><strong>Individual Filtering:</strong> Filter by family member</li>
-                    <li><strong>Shared Budgets:</strong> Everyone sees the same budget limits</li>
-                    <li><strong>Shared Goals:</strong> Collaborative savings goals</li>
-                    <li><strong>Full Transparency:</strong> All members see all transactions</li>
-                    <li><strong>Unlimited Accounts:</strong> Family members get their own unlimited accounts (Premium)
-                    </li>
-                </ul>
-
-                <h3>Leaving a Family</h3>
-                <p>Go to Family → Leave Family. Your data stays with you.</p>
+                <p>See <a href="getting-started.html#step7">Getting Started</a> for instructions on creating/joining a
+                    family.</p>
             </section>
 
             <section id="settings" class="doc-section">
                 <h2>⚙️ Settings</h2>
-                <p>Customize your account and preferences.</p>
-
-                <h3>User Settings</h3>
-                <ul>
-                    <li><strong>Email:</strong> Update your email address</li>
-                    <li><strong>Password:</strong> Change your password</li>
-                    <li><strong>Notifications:</strong> Email preferences</li>
-                </ul>
-
-                <h3>Pay Cycle Settings</h3>
-                <ul>
-                    <li><strong>Cycle Type:</strong> Weekly, Bi-weekly, Monthly</li>
-                    <li><strong>Pay Day:</strong> Day of month (e.g., 16th)</li>
-                </ul>
-
-                <h3>Subscription Management</h3>
-                <ul>
-                    <li><strong>Current Plan:</strong> View your plan details</li>
-                    <li><strong>Upgrade/Downgrade:</strong> Change plans</li>
-                    <li><strong>Cancel:</strong> Cancel subscription</li>
-                    <li><strong>Billing History:</strong> View past invoices</li>
-                </ul>
-
-                <h3>Delete Account</h3>
-                <p>Permanently delete your account and all data:</p>
-                <ol>
-                    <li>Go to Settings → Delete Account</li>
-                    <li>Enter your password</li>
-                    <li>Type "DELETE MY ACCOUNT"</li>
-                    <li>Confirm deletion</li>
-                </ol>
-                <div class="warning-box">
-                    <strong>⚠️ Warning:</strong> This cannot be undone! All your data will be permanently deleted.
-                </div>
+                <p>Customize your account and preferences. (Email, Password, Pay Cycle, Subscription).</p>
             </section>
 
             <div class="help-box">

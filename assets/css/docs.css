@@ -249,3 +249,31 @@ tr:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* Screenshot Images */
+.doc-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin: 1.5rem 0;
+    border: 1px solid var(--border);
+    display: block;
+}
+
+.doc-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.doc-image-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}

@@ -2,7 +2,33 @@
 
 **Status:** 🔒 Private (Ready for Review)
 
+![Dashboard Hero](assets/images/dashboard-hero.png)
+
 This repository contains the public-facing documentation for Family Budget Tracker.
+
+## 📸 Visual Tour
+
+### Comprehensive Dashboard
+Track your spending, savings, and net worth at a glance.
+![Financial Overview](assets/images/financial-overview.png)
+
+### Intelligent Savings Goals
+Manage both **Physical** (bank account linked) and **Virtual** (allocated funds) savings goals.
+| Physical Goals | Virtual Goals |
+|----------------|---------------|
+| ![Physical Goals](assets/images/savings-physical.png) | ![Virtual Goals](assets/images/savings-virtual.png) |
+
+### Powerful Budgeting
+Set limits for every category and track real-time progress.
+![Budget Limits](assets/images/budget-limits.png)
+
+### Family Management
+Invite your partner and kids to track finances together.
+![Family Settings](assets/images/family-management.png)
+
+### Flexible Plans
+Transparent pricing for individuals and families.
+![Pricing Plans](assets/images/pricing-cards.png)
 
 ## 📁 What's Been Created
 
@@ -71,7 +97,7 @@ family-budget-docs-public/
 - [x] Easy to read typography
 
 ### Still Needed
-- [ ] Screenshots of actual app features
+- [x] Screenshots of actual app features
 - [ ] Demo videos (or YouTube embeds)
 - [ ] Feature-specific pages (optional)
 - [ ] Final review by owner

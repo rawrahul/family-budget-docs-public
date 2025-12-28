@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Complete User Manual for Family Budget Tracker - Learn all features and how to use them">
+    <title>User Manual - Family Budget Tracker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">💰</span>
+                <h1>Family Budget</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user-manual.html" class="active">User Manual</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="getting-started.html">Getting Started</a></li>
+                <li><a href="https://family-budget.digraw.xyz" class="btn-primary">Try App</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="docs-container">
+        <aside class="sidebar">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#accounts">Accounts</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#ai-upload">AI Statement Upload</a></li>
+                <li><a href="#budget-limits">Budget Limits</a></li>
+                <li><a href="#savings-goals">Savings Goals</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#family">Family Sharing</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="docs-content">
+            <h1>📖 User Manual</h1>
+            <p class="lead">Complete guide to all features in Family Budget Tracker. Learn how to make the most of your
+                budgeting experience.</p>
+
+            <section id="dashboard" class="doc-section">
+                <h2>🏠 Dashboard</h2>
+                <p>Your dashboard is the central hub showing your financial overview for the current pay cycle.</p>
+
+                <h3>Dashboard Tabs</h3>
+                <p>The dashboard has three main tabs:</p>
+                <ul>
+                    <li><strong>Overview:</strong> Financial summary, AI insights, and spending breakdown</li>
+                    <li><strong>Savings Goals:</strong> Quick view of your physical and virtual goals</li>
+                    <li><strong>Transactions:</strong> Search, filter, and manage transactions</li>
+                </ul>
+
+                <h3>Key Metrics</h3>
+                <ul>
+                    <li><strong>Income:</strong> Total money received this pay cycle</li>
+                    <li><strong>Expenses:</strong> Total spent (excluding transfers and refunds)</li>
+                    <li><strong>Physical Goals:</strong> Money transferred to savings accounts</li>
+                    <li><strong>Virtual Goals:</strong> Money mentally allocated (still in checking)</li>
+                    <li><strong>Safe to Spend:</strong> Income - Expenses - Physical - Virtual</li>
+                </ul>
+
+                <h3>AI-Powered Insights</h3>
+                <p>Premium users get personalized spending insights updated daily:</p>
+                <ul>
+                    <li>Spending trends and patterns</li>
+                    <li>Budget recommendations</li>
+                    <li>Unusual spending alerts</li>
+                    <li>Savings opportunities</li>
+                </ul>
+
+                <h3>Family Member Filter</h3>
+                <p>In family accounts, filter the dashboard to see:</p>
+                <ul>
+                    <li><strong>All Family:</strong> Combined view of everyone's finances</li>
+                    <li><strong>Individual Member:</strong> Just one person's spending</li>
+                </ul>
+            </section>
+
+            <section id="accounts" class="doc-section">
+                <h2>🏦 Accounts Management</h2>
+                <p>Manage all your bank accounts, credit cards, and savings accounts in one place.</p>
+
+                <h3>Adding an Account</h3>
+                <ol>
+                    <li>Click <strong>Accounts</strong> in navigation</li>
+                    <li>Click <strong>"+ Add Account"</strong></li>
+                    <li>Fill in:
+                        <ul>
+                            <li><strong>Account Name:</strong> e.g., "Chase Checking"</li>
+                            <li><strong>Account Type:</strong> Bank Account or Credit Card</li>
+                            <li><strong>Currency:</strong> USD, GBP, EUR, INR, etc.</li>
+                            <li><strong>Initial Balance:</strong> (Optional) Current balance</li>
+                        </ul>
+                    </li>
+                    <li>Click <strong>"Add Account"</strong></li>
+                </ol>
+
+                <h3>Account Types</h3>
+                <ul>
+                    <li><strong>Bank Account:</strong> Checking, savings, or money market accounts
+                        <ul>
+                            <li>Positive balance = asset</li>
+                            <li>Deposits increase balance</li>
+                            <li>Withdrawals decrease balance</li>
+                        </ul>
+                    </li>
+                    <li><strong>Credit Card:</strong> Credit card accounts
+                        <ul>
+                            <li>Balance = liability (what you owe)</li>
+                            <li>Purchases increase balance</li>
+                            <li>Payments decrease balance</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Editing Accounts</h3>
+                <p>Click the ✏️ icon next to any account to:</p>
+                <ul>
+                    <li>Change account name</li>
+                    <li>Update current balance</li>
+                    <li>Adjust initial balance and date</li>
+                </ul>
+
+                <h3>Deleting Accounts</h3>
+                <div class="warning-box">
+                    <strong>⚠️ Warning:</strong> Deleting an account also deletes all its transactions. This cannot be
+                    undone!
+                </div>
+            </section>
+
+            <section id="transactions" class="doc-section">
+                <h2>📝 Transactions</h2>
+                <p>Add, edit, and manage all your financial transactions.</p>
+
+                <h3>Adding a Transaction Manually</h3>
+                <ol>
+                    <li>Click <strong>Add → Transaction</strong></li>
+                    <li>Select <strong>transaction type:</strong>
+                        <ul>
+                            <li><strong>Expense:</strong> Money spent</li>
+                            <li><strong>Income:</strong> Money received</li>
+                            <li><strong>Internal Transfer:</strong> Moving money between your accounts</li>
+                        </ul>
+                    </li>
+                    <li>Fill in details:
+                        <ul>
+                            <li><strong>Date:</strong> Transaction date</li>
+                            <li><strong>Amount:</strong> Transaction amount</li>
+                            <li><strong>Account:</strong> Which account</li>
+                            <li><strong>Category:</strong> What type of expense/income</li>
+                            <li><strong>Note:</strong> Description</li>
+                        </ul>
+                    </li>
+                    <li>Click <strong>"Add Transaction"</strong></li>
+                </ol>
+
+                <h3>Internal Transfers</h3>
+                <p>When moving money between your own accounts:</p>
+                <ul>
+                    <li>Select <strong>"Internal Transfer"</strong></li>
+                    <li>Choose <strong>source account</strong> (where money comes from)</li>
+                    <li>Choose <strong>target account</strong> (where money goes)</li>
+                    <li>Enter amount and date</li>
+                </ul>
+                <p>The app creates two linked transactions automatically (debit and credit).</p>
+
+                <h3>Editing Transactions</h3>
+                <p>Click the ✏️ icon next to any transaction to modify it.</p>
+
+                <h3>Deleting Transactions</h3>
+                <p>Two ways to delete:</p>
+                <ul>
+                    <li><strong>Single:</strong> Click ❌ next to transaction</li>
+                    <li><strong>Bulk:</strong> Check multiple transactions → Click "Delete Selected"</li>
+                </ul>
+
+                <h3>Searching & Filtering</h3>
+                <p>Use the Transaction Audit section to:</p>
+                <ul>
+                    <li>Search by description</li>
+                    <li>Filter by category</li>
+                    <li>Filter by account</li>
+                    <li>Filter by date range</li>
+                </ul>
+
+                <h3>Recurring Transactions</h3>
+                <p>Set up automatic monthly transactions:</p>
+                <ol>
+                    <li>Click <strong>Add → Recurring Transaction</strong></li>
+                    <li>Fill in transaction details</li>
+                    <li>Set <strong>recurrence day</strong> (1-31)</li>
+                    <li>Choose <strong>status:</strong>
+                        <ul>
+                            <li><strong>Active:</strong> Auto-creates transactions</li>
+                            <li><strong>Paused:</strong> Temporarily disabled</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>The app automatically creates transactions on the specified day each month.</p>
+            </section>
+
+            <section id="ai-upload" class="doc-section">
+                <h2>🤖 AI Statement Upload (Premium)</h2>
+                <p>Upload bank statements and let AI extract transactions automatically.</p>
+
+                <div class="warning-box">
+                    <strong>⚠️ Premium Feature:</strong> Requires Premium Solo or Premium Family subscription.
+                </div>
+
+                <h3>How It Works</h3>
+                <ol>
+                    <li>You upload a PDF or image of your bank statement</li>
+                    <li>Google Gemini AI "reads" the statement like a human</li>
+                    <li>Extracts all transactions with 95%+ accuracy</li>
+                    <li>Categorizes transactions automatically</li>
+                    <li>Detects duplicates to prevent double-counting</li>
+                    <li>You review and confirm</li>
+                </ol>
+
+                <h3>Uploading a Statement</h3>
+                <ol>
+                    <li>Click <strong>AI Statement Upload</strong></li>
+                    <li>Click <strong>"Upload Statement"</strong></li>
+                    <li>Select your <strong>account</strong></li>
+                    <li>Upload <strong>PDF or image</strong> (JPG, PNG)</li>
+                    <li>Wait 10-30 seconds for processing</li>
+                    <li>Review extracted transactions</li>
+                    <li>Edit any incorrect categories</li>
+                    <li>Click <strong>"Confirm & Add All"</strong></li>
+                </ol>
+
+                <h3>Validation</h3>
+                <p>The app validates your statement by comparing:</p>
+                <ul>
+                    <li>Opening balance + transactions = closing balance</li>
+                    <li>If validation fails, you can manually enter balances</li>
+                </ul>
+
+                <h3>Supported Formats</h3>
+                <ul>
+                    <li>PDF statements (most common)</li>
+                    <li>Image files (JPG, PNG)</li>
+                    <li>Multi-page statements</li>
+                    <li>Bank accounts and credit cards</li>
+                </ul>
+
+                <h3>Privacy & Security</h3>
+                <ul>
+                    <li>Original PDF is <strong>permanently deleted</strong> after processing</li>
+                    <li>Google does NOT store or train on your data</li>
+                    <li>Only extracted transactions are saved</li>
+                </ul>
+            </section>
+
+            <section id="budget-limits" class="doc-section">
+                <h2>📏 Budget Limits</h2>
+                <p>Set monthly spending limits for each category and track your progress.</p>
+
+                <h3>Creating a Budget Limit</h3>
+                <ol>
+                    <li>Go to <strong>Budget → Budget Limits</strong></li>
+                    <li>Click <strong>"+ Add Budget Limit"</strong></li>
+                    <li>Select a <strong>category</strong></li>
+                    <li>Enter your <strong>monthly limit</strong></li>
+                    <li>Click <strong>"Save"</strong></li>
+                </ol>
+
+                <h3>Viewing Budget Status</h3>
+                <p>The Budget Limits page shows:</p>
+                <ul>
+                    <li><strong>Category name</strong></li>
+                    <li><strong>Limit:</strong> Your monthly budget</li>
+                    <li><strong>Spent:</strong> How much you've spent this month</li>
+                    <li><strong>Remaining:</strong> Budget left</li>
+                    <li><strong>Progress bar:</strong> Visual indicator</li>
+                </ul>
+
+                <h3>Budget Warnings</h3>
+                <p>The progress bar changes color:</p>
+                <ul>
+                    <li><strong>Green:</strong> Under 70% of budget</li>
+                    <li><strong>Yellow:</strong> 70-90% of budget</li>
+                    <li><strong>Red:</strong> Over 90% or exceeded</li>
+                </ul>
+
+                <h3>Editing & Deleting</h3>
+                <p>Click ✏️ to edit or ❌ to delete any budget limit.</p>
+            </section>
+
+            <section id="savings-goals" class="doc-section">
+                <h2>🎯 Savings Goals</h2>
+                <p>Set financial goals and track your progress automatically.</p>
+
+                <h3>Physical vs Virtual Goals</h3>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Physical Goal</th>
+                        <th>Virtual Goal</th>
+                    </tr>
+                    <tr>
+                        <td>Money Location</td>
+                        <td>Separate savings account</td>
+                        <td>Still in checking account</td>
+                    </tr>
+                    <tr>
+                        <td>Transfer Required</td>
+                        <td>Yes - you manually transfer</td>
+                        <td>No - mental allocation only</td>
+                    </tr>
+                    <tr>
+                        <td>Safe to Spend Impact</td>
+                        <td>Reduces when transferred</td>
+                        <td>Reduces when allocated</td>
+                    </tr>
+                    <tr>
+                        <td>Best For</td>
+                        <td>Long-term savings, emergency funds</td>
+                        <td>Short-term goals, bill savings</td>
+                    </tr>
+                </table>
+
+                <h3>Creating a Savings Goal</h3>
+                <ol>
+                    <li>Go to <strong>Budget → Savings Goals</strong></li>
+                    <li>Click <strong>"+ Create Goal"</strong></li>
+                    <li>Choose <strong>goal type</strong> (Physical or Virtual)</li>
+                    <li>Fill in:
+                        <ul>
+                            <li><strong>Goal Name:</strong> e.g., "Emergency Fund"</li>
+                            <li><strong>Target Amount:</strong> Your goal</li>
+                            <li><strong>Per-Cycle Allocation:</strong> How much to save each pay cycle</li>
+                            <li><strong>Deduction Day:</strong> Which day of cycle to save (1-31)</li>
+                        </ul>
+                    </li>
+                    <li>For Physical Goals: Select source and target accounts</li>
+                    <li>For Virtual Goals: Select source account</li>
+                    <li>Click <strong>"Create Goal"</strong></li>
+                </ol>
+
+                <h3>Tracking Progress</h3>
+                <p>The Savings Goals page shows:</p>
+                <ul>
+                    <li><strong>Progress bar:</strong> Visual progress toward goal</li>
+                    <li><strong>Current amount:</strong> How much saved</li>
+                    <li><strong>Remaining:</strong> Amount left to reach goal</li>
+                    <li><strong>Next deduction date:</strong> When to save next</li>
+                    <li><strong>Transfer status:</strong> (Physical) Whether you've transferred this cycle</li>
+                    <li><strong>Allocation status:</strong> (Virtual) Whether you've allocated this cycle</li>
+                </ul>
+
+                <h3>Physical Goal Actions</h3>
+                <ul>
+                    <li><strong>⚡ Fund Transfer:</strong> Log a manual transfer you made</li>
+                    <li>The app tracks if you've completed your transfer for this cycle</li>
+                    <li>View transfer history</li>
+                </ul>
+
+                <h3>Virtual Goal Actions</h3>
+                <ul>
+                    <li><strong>⚡ Quick Fund:</strong> Allocate money to this goal</li>
+                    <li>Creates an internal transfer transaction</li>
+                    <li>Reduces your "Safe to Spend"</li>
+                    <li>View allocation history</li>
+                </ul>
+
+                <h3>Pausing Goals</h3>
+                <p>Edit a goal and check <strong>"Pause Goal"</strong> to temporarily stop tracking without deleting it.
+                </p>
+            </section>
+
+            <section id="reports" class="doc-section">
+                <h2>📊 Reports (Premium)</h2>
+                <p>Advanced analytics and spending insights.</p>
+
+                <div class="warning-box">
+                    <strong>⚠️ Premium Feature:</strong> Advanced reports require Premium subscription.
+                </div>
+
+                <h3>Available Reports</h3>
+                <ul>
+                    <li><strong>Spending Trends:</strong> Month-over-month comparison</li>
+                    <li><strong>Category Breakdown:</strong> Where your money goes</li>
+                    <li><strong>Income vs Expenses:</strong> Financial health overview</li>
+                    <li><strong>Savings Rate:</strong> How much you're saving</li>
+                </ul>
+
+                <h3>Exporting Data</h3>
+                <p>Premium users can export all transactions as CSV for use in Excel or other tools.</p>
+            </section>
+
+            <section id="family" class="doc-section">
+                <h2>👨‍👩‍👧‍👦 Family Sharing (Premium Family)</h2>
+                <p>Collaborate on budgets with up to 5 family members.</p>
+
+                <div class="warning-box">
+                    <strong>⚠️ Premium Family Only:</strong> Requires Premium Family subscription ($14.99/mo).
+                </div>
+
+                <h3>Creating a Family</h3>
+                <ol>
+                    <li>Go to <strong>Family</strong> in navigation</li>
+                    <li>Click <strong>"Create Family"</strong></li>
+                    <li>Enter your <strong>family name</strong></li>
+                    <li>Copy the <strong>invite code</strong></li>
+                    <li>Share code with family members</li>
+                </ol>
+
+                <h3>Joining a Family</h3>
+                <ol>
+                    <li>Create your account</li>
+                    <li>Go to <strong>Family → Join Family</strong></li>
+                    <li>Enter the <strong>invite code</strong></li>
+                    <li>Click <strong>"Join"</strong></li>
+                </ol>
+
+                <h3>Family Features</h3>
+                <ul>
+                    <li><strong>Shared Dashboard:</strong> See combined family finances</li>
+                    <li><strong>Individual Filtering:</strong> Filter by family member</li>
+                    <li><strong>Shared Budgets:</strong> Everyone sees the same budget limits</li>
+                    <li><strong>Shared Goals:</strong> Collaborative savings goals</li>
+                    <li><strong>Full Transparency:</strong> All members see all transactions</li>
+                </ul>
+
+                <h3>Leaving a Family</h3>
+                <p>Go to Family → Leave Family. Your data stays with you.</p>
+            </section>
+
+            <section id="settings" class="doc-section">
+                <h2>⚙️ Settings</h2>
+                <p>Customize your account and preferences.</p>
+
+                <h3>User Settings</h3>
+                <ul>
+                    <li><strong>Email:</strong> Update your email address</li>
+                    <li><strong>Password:</strong> Change your password</li>
+                    <li><strong>Notifications:</strong> Email preferences</li>
+                </ul>
+
+                <h3>Pay Cycle Settings</h3>
+                <ul>
+                    <li><strong>Cycle Type:</strong> Weekly, bi-weekly, monthly, custom</li>
+                    <li><strong>Start Day:</strong> When your pay cycle begins</li>
+                    <li><strong>Cycle Length:</strong> Number of days (for custom)</li>
+                </ul>
+
+                <h3>Subscription Management</h3>
+                <ul>
+                    <li><strong>Current Plan:</strong> View your plan details</li>
+                    <li><strong>Upgrade/Downgrade:</strong> Change plans</li>
+                    <li><strong>Cancel:</strong> Cancel subscription</li>
+                    <li><strong>Billing History:</strong> View past invoices</li>
+                </ul>
+
+                <h3>Delete Account</h3>
+                <p>Permanently delete your account and all data:</p>
+                <ol>
+                    <li>Go to Settings → Delete Account</li>
+                    <li>Enter your password</li>
+                    <li>Type "DELETE MY ACCOUNT"</li>
+                    <li>Confirm deletion</li>
+                </ol>
+                <div class="warning-box">
+                    <strong>⚠️ Warning:</strong> This cannot be undone! All your data will be permanently deleted.
+                </div>
+            </section>
+
+            <div class="help-box">
+                <h3>Need More Help?</h3>
+                <p>Check our <a href="faq.html">FAQ</a> or email <a
+                        href="mailto:support@digraw.xyz">support@digraw.xyz</a></p>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Family Budget Tracker. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://family-budget.digraw.xyz/support/privacy">Privacy Policy</a>
+                <a href="https://family-budget.digraw.xyz/support/terms">Terms of Service</a>
+                <a href="mailto:support@digraw.xyz">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

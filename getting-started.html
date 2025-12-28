@@ -43,8 +43,8 @@
 
         <main class="docs-content">
             <h1>🚀 Getting Started with Family Budget Tracker</h1>
-            <p class="lead">Welcome! This guide will help you set up your account and start tracking your finances in
-                under 10 minutes.</p>
+            <p class="lead">Welcome! This guide will help you set up your account and start tracking your finances
+                accurately.</p>
 
             <div class="info-box">
                 <strong>💡 Tip:</strong> You can start with the <strong>Free Solo</strong> plan and upgrade to Premium
@@ -77,22 +77,22 @@
                             <li><strong>Weekly</strong> - Every 7 days</li>
                             <li><strong>Bi-weekly</strong> - Every 14 days</li>
                             <li><strong>Monthly</strong> - Once per month</li>
-                            <li><strong>Custom</strong> - Any number of days</li>
                         </ul>
                     </li>
-                    <li>Set your <strong>cycle start day</strong> (e.g., "1" for 1st of month, or day of week)</li>
+                    <li>Set your <strong>Pay Day</strong> (e.g., "16" for 16th of month)</li>
                     <li>Click <strong>"Save"</strong></li>
                 </ol>
 
                 <div class="tip-box">
-                    <strong>💡 Why this matters:</strong> Your dashboard shows spending for the current pay cycle, not
-                    just the calendar month. This gives you a more accurate view of your budget!
+                    <strong>💡 Why this matters:</strong> Your dashboard "Safe to Spend" is calculated based on this
+                    cycle (e.g., from 16th to 15th), giving you a more accurate view than a standard calendar month.
                 </div>
             </section>
 
             <section id="step3" class="doc-section">
                 <h2>Step 3: Add Your Bank Accounts</h2>
-                <p>Add all accounts you want to track (checking, savings, credit cards).</p>
+                <p>Add all accounts you want to track. Precision is key here for accurate "Safe to Spend" calculations.
+                </p>
                 <ol>
                     <li>Go to <strong>Accounts</strong> in the navigation</li>
                     <li>Click <strong>"+ Add Account"</strong></li>
@@ -101,127 +101,152 @@
                             <li><strong>Account Name</strong> (e.g., "Chase Checking")</li>
                             <li><strong>Account Type</strong> (Bank Account or Credit Card)</li>
                             <li><strong>Currency</strong> (USD, GBP, EUR, etc.)</li>
-                            <li><strong>Initial Balance</strong> (optional - current balance)</li>
+                            <li><strong>Initial Balance & Date:</strong>
+                                <ul>
+                                    <li><strong>CRITICAL:</strong> This must be the actual bank balance <em>on the date
+                                            you select</em>.</li>
+                                    <li><strong>Example:</strong> If you start uploading statements from June 19th,
+                                        enter the <strong>Closing Balance of June 18th</strong> as your initial balance,
+                                        and set the date to June 18th.</li>
+                                    <li><strong>Bank Accounts:</strong> Use positive numbers (e.g., 5000)</li>
+                                    <li><strong>Credit Cards:</strong> Use negative numbers for debt (e.g., -1200)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Budgeting Account Checkbox:</strong>
+                                <ul>
+                                    <li><strong>Check this</strong> for cash-flow accounts (Checking, Credit Cards).
+                                    </li>
+                                    <li><strong>Uncheck</strong> for investment or mortgage accounts (assets that don't
+                                        affect daily spending).</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>Click <strong>"Add Account"</strong></li>
-                    <li>Repeat for all your accounts</li>
                 </ol>
-
-                <div class="info-box">
-                    <strong>🌍 Multi-Currency:</strong> Each account can have its own currency. Perfect for
-                    international families!
-                </div>
             </section>
 
             <section id="step4" class="doc-section">
                 <h2>Step 4: Upload Your First Statement (Premium)</h2>
-                <p>Let AI extract transactions automatically from your bank statement.</p>
+                <p>Let AI extract transactions automatically. Note that limits apply (approx. 10 statements/month,
+                    subject to Fair Usage Policy).</p>
 
                 <div class="warning-box">
-                    <strong>⚠️ Premium Feature:</strong> AI Statement Upload requires Premium Solo ($9.99/mo) or Premium
-                    Family ($14.99/mo). Free users can add transactions manually.
+                    <strong>⚠️ Requirements:</strong> Statements MUST contain an <strong>Account Summary</strong> table
+                    (Opening/Closing Balance). Without this, we cannot validate 100% accuracy, and you will need to
+                    manually adjust balances.
                 </div>
 
-                <h3>For Premium Users:</h3>
+                <h3>How to Upload:</h3>
                 <ol>
                     <li>Go to <strong>AI Statement Upload</strong></li>
                     <li>Click <strong>"Upload Statement"</strong></li>
                     <li>Select your <strong>account</strong></li>
-                    <li>Upload your <strong>PDF or image</strong> statement</li>
-                    <li>Wait 10-30 seconds for AI processing</li>
-                    <li>Review extracted transactions</li>
-                    <li>Click <strong>"Confirm & Add"</strong></li>
+                    <li>Upload your <strong>PDF or image</strong> (Max ~10 pages recommended)</li>
+                    <li>Wait for AI processing and validation.</li>
                 </ol>
 
-                <h3>For Free Users:</h3>
-                <ol>
-                    <li>Go to <strong>Dashboard → Add → Transaction</strong></li>
-                    <li>Enter transaction details manually</li>
-                    <li>Click <strong>"Add Transaction"</strong></li>
-                </ol>
-
-                <div class="tip-box">
-                    <strong>💡 AI Accuracy:</strong> Our AI achieves 95%+ accuracy on standard bank statements. It
-                    learns from your corrections!
-                </div>
+                <h3>Validation & Scoring:</h3>
+                <ul>
+                    <li><strong>100% Score:</strong> Perfect match! (Opening Balance + Transactions = Closing Summary
+                        Balance)</li>
+                    <li><strong>&lt; 70% Score:</strong> Usually means the <strong>Account Summary</strong> table is
+                        missing or unreadable. You will likely need to manually check transactions.</li>
+                    <li><strong>Correction Process:</strong>
+                        <ul>
+                            <li>Check the <strong>number of transactions</strong> detected vs your statement.</li>
+                            <li>Double-check <strong>categories</strong> and descriptions.</li>
+                            <li>If the result is poor, <strong>delete the statement</strong> and try uploading again
+                                (clear image/scan).</li>
+                            <li>If correct, click <strong>"Confirm & Add"</strong> to save to your ledger.</li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
 
             <section id="step5" class="doc-section">
                 <h2>Step 5: Set Budget Limits</h2>
-                <p>Define spending limits for each category.</p>
+                <p>Define spending limits for each category to get alerts.</p>
                 <ol>
                     <li>Go to <strong>Budget → Budget Limits</strong></li>
                     <li>Click <strong>"+ Add Budget Limit"</strong></li>
                     <li>Select a <strong>category</strong> (e.g., "Groceries")</li>
                     <li>Set your <strong>monthly limit</strong></li>
                     <li>Click <strong>"Save"</strong></li>
-                    <li>Repeat for other categories</li>
                 </ol>
 
                 <div class="info-box">
-                    <strong>📊 Dashboard View:</strong> Your dashboard shows how much you've spent vs your limits in
-                    real-time!
+                    <strong>🔔 Note on Alerts:</strong> Budget warnings (90% / 100% exceeded) are based on the
+                    <strong>Calendar Month</strong>, not your custom Pay Cycle. This ensures you track monthly bills
+                    correctly regardless of when you get paid.
                 </div>
             </section>
 
             <section id="step6" class="doc-section">
                 <h2>Step 6: Create Savings Goals</h2>
-                <p>Set goals and track your progress automatically.</p>
-                <ol>
-                    <li>Go to <strong>Budget → Savings Goals</strong></li>
-                    <li>Click <strong>"+ Create Goal"</strong></li>
-                    <li>Choose goal type:
-                        <ul>
-                            <li><strong>Physical Goal</strong> - Money in a separate savings account</li>
-                            <li><strong>Virtual Goal</strong> - Mental allocation (money stays in checking)</li>
-                        </ul>
-                    </li>
-                    <li>Fill in:
-                        <ul>
-                            <li><strong>Goal Name</strong> (e.g., "Emergency Fund")</li>
-                            <li><strong>Target Amount</strong></li>
-                            <li><strong>Per-Cycle Allocation</strong> (how much to save each pay cycle)</li>
-                            <li><strong>Deduction Day</strong> (when to save each cycle)</li>
-                        </ul>
-                    </li>
-                    <li>Click <strong>"Create Goal"</strong></li>
-                </ol>
+                <p>Track progress toward financial targets.</p>
 
                 <div class="tip-box">
-                    <strong>💡 Physical vs Virtual:</strong> Physical goals track actual transfers to savings. Virtual
-                    goals reduce your "Safe to Spend" amount without moving money.
+                    <strong>💡 Pro Tip:</strong> Keep your Goal Name the same as your bank transaction description
+                    (e.g., "Transfer to Aesop Savings"). This helps you identify them easily.
                 </div>
+
+                <h3>Physical Goals (Separate Account)</h3>
+                <ul>
+                    <li>Use this when you transfer money to a non-budgeting savings account.</li>
+                    <li><strong>To Fund:</strong> Upload the statement for the target account OR use the <strong>Fund
+                            Transfer</strong> button.</li>
+                    <li><strong>Manual Fund Transfer:</strong>
+                        <ul>
+                            <li>Click "Fund Transfer" on the goal card.</li>
+                            <li>Select the date (match your bank statement).</li>
+                            <li><strong>Important:</strong> If the transaction already exists in your uploaded Source
+                                Account statement (as a debit), <strong>uncheck the "Source Side" box</strong>. Only
+                                check "Target Side". This prevents duplicate transactions.</li>
+                            <li>If no statement exists for either side, check both boxes to create both debit and credit
+                                transactions.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Virtual Goals (Mental Allocation)</h3>
+                <ul>
+                    <li>Use this to "earmark" money that stays in your checking account.</li>
+                    <li><strong>To Fund:</strong> Click <strong>"Quick Fund"</strong>.</li>
+                    <li>Select the date and amount.</li>
+                    <li>This instantly creates an internal allocation transaction and reduces your "Safe to Spend"
+                        without moving actual money.</li>
+                </ul>
             </section>
 
             <section id="step7" class="doc-section">
-                <h2>Step 7: Invite Family Members (Premium Family)</h2>
+                <h2>Step 7: Invite Family (Premium Family)</h2>
                 <p>Share budgets and track finances together.</p>
 
                 <div class="warning-box">
-                    <strong>⚠️ Premium Family Only:</strong> Family sharing requires Premium Family plan ($14.99/mo for
-                    up to 5 members).
+                    <strong>👨‍👩‍👧‍👦 Limits:</strong> Premium Family Plan allows up to <strong>5 family
+                        members</strong>.
                 </div>
 
                 <ol>
                     <li>Go to <strong>Family</strong> in navigation</li>
                     <li>Click <strong>"Create Family"</strong></li>
-                    <li>Enter your <strong>family name</strong></li>
-                    <li>Copy the <strong>invite code</strong></li>
-                    <li>Share the code with family members</li>
-                    <li>They sign up and enter the code</li>
-                    <li>Everyone now sees shared budgets!</li>
+                    <li>Share the <strong>invite code</strong> with your family.</li>
                 </ol>
 
-                <div class="info-box">
-                    <strong>👨‍👩‍👧‍👦 Full Transparency:</strong> All family members see all accounts and
-                    transactions. This encourages open communication about money!
-                </div>
+                <h3>Plan Capabilities:</h3>
+                <ul>
+                    <li><strong>Premium Owner:</strong> Unlimited accounts, categories, and AI uploads (subject to ~10
+                        statements/mo fair usage).</li>
+                    <li><strong>Family Members:</strong> Get their own unlimited accounts and share the family premium
+                        features.</li>
+                    <li><strong>Transparency:</strong> Everyone in the family sees ALL accounts and transactions.</li>
+                </ul>
             </section>
 
             <section class="doc-section">
                 <h2>🎉 You're All Set!</h2>
-                <p>Congratulations! You've completed the basic setup. Here's what to do next:</p>
+                <p>Congratulations! You've completed the setup.</p>
 
                 <div class="next-steps">
                     <div class="next-step-card">

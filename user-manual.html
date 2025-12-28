@@ -100,28 +100,35 @@
                             <li><strong>Account Name:</strong> e.g., "Chase Checking"</li>
                             <li><strong>Account Type:</strong> Bank Account or Credit Card</li>
                             <li><strong>Currency:</strong> USD, GBP, EUR, INR, etc.</li>
-                            <li><strong>Initial Balance:</strong> (Optional) Current balance</li>
+                            <li><strong>Initial Balance & Date:</strong>
+                                <ul>
+                                    <li><strong>CRITICAL:</strong> Must match actual bank balance on the selected date.
+                                    </li>
+                                    <li><strong>Bank Accounts:</strong> Positive value (e.g., 5000) for assets.</li>
+                                    <li><strong>Credit Cards:</strong> Negative value (e.g., -1200) for debt.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Budgeting Account Checkbox:</strong>
+                                <ul>
+                                    <li><strong>Check this</strong> for cash-flow accounts (Checking, Credit Cards).
+                                    </li>
+                                    <li><strong>Uncheck</strong> for investment or mortgage accounts.</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>Click <strong>"Add Account"</strong></li>
                 </ol>
 
+                <div class="warning-box">
+                    <strong>⚠️ Important:</strong> Accurate "Safe to Spend" relies on correct Initial Balances. Always
+                    use the Closing Balance from your bank statement for the date prior to your transaction history.
+                </div>
+
                 <h3>Account Types</h3>
                 <ul>
-                    <li><strong>Bank Account:</strong> Checking, savings, or money market accounts
-                        <ul>
-                            <li>Positive balance = asset</li>
-                            <li>Deposits increase balance</li>
-                            <li>Withdrawals decrease balance</li>
-                        </ul>
-                    </li>
-                    <li><strong>Credit Card:</strong> Credit card accounts
-                        <ul>
-                            <li>Balance = liability (what you owe)</li>
-                            <li>Purchases increase balance</li>
-                            <li>Payments decrease balance</li>
-                        </ul>
-                    </li>
+                    <li><strong>Bank Account:</strong> Checking, savings, or money market accounts (Asset)</li>
+                    <li><strong>Credit Card:</strong> Credit card accounts (Liability/Debt)</li>
                 </ul>
 
                 <h3>Editing Accounts</h3>
@@ -212,7 +219,8 @@
 
             <section id="ai-upload" class="doc-section">
                 <h2>🤖 AI Statement Upload (Premium)</h2>
-                <p>Upload bank statements and let AI extract transactions automatically.</p>
+                <p>Upload bank statements (subject to ~10 statements/mo fair usage) and let AI extract transactions
+                    automatically.</p>
 
                 <div class="warning-box">
                     <strong>⚠️ Premium Feature:</strong> Requires Premium Solo or Premium Family subscription.
@@ -220,7 +228,7 @@
 
                 <h3>How It Works</h3>
                 <ol>
-                    <li>You upload a PDF or image of your bank statement</li>
+                    <li>You upload a PDF or image of your bank statement (Max ~10 pages)</li>
                     <li>Google Gemini AI "reads" the statement like a human</li>
                     <li>Extracts all transactions with 95%+ accuracy</li>
                     <li>Categorizes transactions automatically</li>
@@ -240,11 +248,18 @@
                     <li>Click <strong>"Confirm & Add All"</strong></li>
                 </ol>
 
-                <h3>Validation</h3>
-                <p>The app validates your statement by comparing:</p>
+                <h3>Validation & Scoring</h3>
+                <div class="warning-box">
+                    <strong>⚠️ Requirement:</strong> Statement must have an <strong>Account Summary</strong> table
+                    (Opening/Closing Balance).
+                </div>
                 <ul>
-                    <li>Opening balance + transactions = closing balance</li>
-                    <li>If validation fails, you can manually enter balances</li>
+                    <li><strong>100% Score:</strong> Perfect match (Opening Balance + Transactions = Closing Balance).
+                    </li>
+                    <li><strong>&lt; 70% Score:</strong> Summary likely missing. Manually check transaction counts and
+                        categories.</li>
+                    <li><strong>Correction:</strong> If score is low, delete the statement and retry (ensure clear
+                        image). Max 3 attempts recommended.</li>
                 </ul>
 
                 <h3>Supported Formats</h3>
@@ -287,6 +302,8 @@
                 </ul>
 
                 <h3>Budget Warnings</h3>
+                <p><strong>Note:</strong> Alerts (90% / 100%) are based on the <strong>Calendar Month</strong>, not your
+                    Pay Cycle. This ensures bills are tracked correctly regardless of pay date.</p>
                 <p>The progress bar changes color:</p>
                 <ul>
                     <li><strong>Green:</strong> Under 70% of budget</li>
@@ -301,6 +318,11 @@
             <section id="savings-goals" class="doc-section">
                 <h2>🎯 Savings Goals</h2>
                 <p>Set financial goals and track your progress automatically.</p>
+
+                <div class="tip-box">
+                    <strong>💡 Pro Tip:</strong> Keep your Goal Name the same as your bank transaction description
+                    (e.g., "Transfer to Aesop Settings"). This helps you identify them easily.
+                </div>
 
                 <h3>Physical vs Virtual Goals</h3>
                 <table>
@@ -356,22 +378,23 @@
                     <li><strong>Current amount:</strong> How much saved</li>
                     <li><strong>Remaining:</strong> Amount left to reach goal</li>
                     <li><strong>Next deduction date:</strong> When to save next</li>
-                    <li><strong>Transfer status:</strong> (Physical) Whether you've transferred this cycle</li>
-                    <li><strong>Allocation status:</strong> (Virtual) Whether you've allocated this cycle</li>
+                    <li><strong>Transfer/Allocation status:</strong> Whether you've funded it this cycle</li>
                 </ul>
 
                 <h3>Physical Goal Actions</h3>
                 <ul>
-                    <li><strong>⚡ Fund Transfer:</strong> Log a manual transfer you made</li>
-                    <li>The app tracks if you've completed your transfer for this cycle</li>
+                    <li><strong>⚡ Fund Transfer:</strong> Log a manual transfer you made.</li>
+                    <li><strong>Important:</strong> If the transaction already exists in your uploaded Source Account
+                        statement (as a debit), <strong>uncheck the "Source Side" box</strong>. Only check "Target
+                        Side". This prevents duplicate transactions.</li>
                     <li>View transfer history</li>
                 </ul>
 
                 <h3>Virtual Goal Actions</h3>
                 <ul>
-                    <li><strong>⚡ Quick Fund:</strong> Allocate money to this goal</li>
-                    <li>Creates an internal transfer transaction</li>
-                    <li>Reduces your "Safe to Spend"</li>
+                    <li><strong>⚡ Quick Fund:</strong> Allocate money to this goal.</li>
+                    <li>Creates an internal transfer transaction automatically.</li>
+                    <li>Reduces your "Safe to Spend" without moving real money.</li>
                     <li>View allocation history</li>
                 </ul>
 
@@ -405,7 +428,8 @@
                 <p>Collaborate on budgets with up to 5 family members.</p>
 
                 <div class="warning-box">
-                    <strong>⚠️ Premium Family Only:</strong> Requires Premium Family subscription ($14.99/mo).
+                    <strong>⚠️ Premium Family Only:</strong> Requires Premium Family subscription ($14.99/mo). Caps at 5
+                    members.
                 </div>
 
                 <h3>Creating a Family</h3>
@@ -432,6 +456,7 @@
                     <li><strong>Shared Budgets:</strong> Everyone sees the same budget limits</li>
                     <li><strong>Shared Goals:</strong> Collaborative savings goals</li>
                     <li><strong>Full Transparency:</strong> All members see all transactions</li>
+                    <li><strong>Unlimited Accounts:</strong> Family members get their own unlimited accounts</li>
                 </ul>
 
                 <h3>Leaving a Family</h3>
@@ -451,9 +476,8 @@
 
                 <h3>Pay Cycle Settings</h3>
                 <ul>
-                    <li><strong>Cycle Type:</strong> Weekly, bi-weekly, monthly, custom</li>
-                    <li><strong>Start Day:</strong> When your pay cycle begins</li>
-                    <li><strong>Cycle Length:</strong> Number of days (for custom)</li>
+                    <li><strong>Cycle Type:</strong> Weekly, Bi-weekly, Monthly</li>
+                    <li><strong>Pay Day:</strong> Day of month (e.g., 16th)</li>
                 </ul>
 
                 <h3>Subscription Management</h3>

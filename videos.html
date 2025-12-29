@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Video Demos for Family Budget Tracker. Watch how to setup, upload statements with AI, and manage family finances.">
+    <title>Video Demos - Family Budget Tracker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/docs.css">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #eee;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .video-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
+            border: 1px solid #e2e8f0;
+        }
+
+        .video-card h3 {
+            color: var(--primary-color, #2d3748);
+            margin-bottom: 0.5rem;
+        }
+
+        .video-card p {
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">💰</span>
+                <h1>Family Budget</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user-manual.html">User Manual</a></li>
+                <li><a href="videos.html" class="active">Video Demos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="getting-started.html">Getting Started</a></li>
+                <li><a href="https://family-budget.digraw.xyz" class="btn-primary">Try App</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Video Demonstrations</h1>
+            <p>Watch short tutorials to master every feature.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="video-grid">
+            <!-- Video 1: Getting Started -->
+            <div class="video-card">
+                <h3>1. Getting Started & Setup</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/6A-a05-7EyY" allowfullscreen></iframe>
+                </div>
+                <p>Learn how to configure your pay cycle, activate your Premium trial, and add your first bank accounts.
+                </p>
+            </div>
+
+            <!-- Video 2: AI Magic -->
+            <div class="video-card">
+                <h3>2. The AI Magic (Statement Upload)</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/HDBsRohr4MY" allowfullscreen></iframe>
+                </div>
+                <p>Watch Google Gemini AI automagically extract transactions from a PDF. Plus, see how duplicate
+                    detection works.</p>
+            </div>
+
+            <!-- Video 3: Daily Management -->
+            <div class="video-card">
+                <h3>3. Daily Management & Insights</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dp7UjwSKKNI" allowfullscreen></iframe>
+                </div>
+                <p>A tour of the dashboard, financial overview charts, transaction audits, and your daily AI financial
+                    coach.</p>
+            </div>
+
+            <!-- Video 4: Family & Goals -->
+            <div class="video-card">
+                <h3>4. Family Sharing & Savings Goals</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/cNX4KMHSyl8" allowfullscreen></iframe>
+                </div>
+                <p>See how to invite family members and track shared savings goals (both physical and virtual).</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 4rem 0;">
+            <h3>Ready to start budgeting?</h3>
+            <a href="getting-started.html" class="btn btn-large btn-primary"
+                style="margin-top: 1rem; display: inline-block;">Read the Guide</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Family Budget Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

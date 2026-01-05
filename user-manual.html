@@ -322,6 +322,91 @@
                 <ul>
                     <li><strong>⚡ Quick Fund:</strong> Allocate money (creates internal ledger entry).</li>
                 </ul>
+
+                <h3>7.6 Best Practices for Goal Matching</h3>
+                <div class="warning-box">
+                    <strong>⚠️ IMPORTANT:</strong> To ensure transactions are matched to the correct goal, follow these
+                    naming conventions!
+                </div>
+
+                <h4>How the Matching Algorithm Works</h4>
+                <p>The system automatically matches transactions to goals by analyzing the
+                    <strong>note/description</strong> field. Here's how it works:</p>
+
+                <ul>
+                    <li><strong>Virtual Goals:</strong> When you use "Quick Fund", the system creates a transaction with
+                        note: <code>"Allocation to {Goal Name}"</code></li>
+                    <li><strong>Physical Goals:</strong> When you use "Log Transfer", the system creates a transaction
+                        with note: <code>"Transfer for {Goal Name}"</code></li>
+                    <li><strong>Exact Match Required:</strong> The goal name in the note must <strong>exactly
+                            match</strong> your goal's name (case-insensitive)</li>
+                </ul>
+
+                <h4>✅ DO's</h4>
+                <ul>
+                    <li><strong>Use the built-in buttons:</strong> "Quick Fund" (virtual) or "Log Transfer" (physical) -
+                        these automatically format notes correctly</li>
+                    <li><strong>Keep goal names unique:</strong> Don't create goals with similar names (e.g., "Fund" and
+                        "Emergency Fund")</li>
+                    <li><strong>Manual transactions:</strong> If adding manually, use exact format:
+                        <ul>
+                            <li>Virtual: <code>"Allocation to Emergency Fund"</code></li>
+                            <li>Physical: <code>"Transfer for Emergency Fund"</code></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>❌ DON'Ts</h4>
+                <ul>
+                    <li><strong>Don't use partial names:</strong> "Allocation to Fund" won't match "Emergency Fund"</li>
+                    <li><strong>Don't add extra text:</strong> "Allocation to Emergency Fund for savings" won't match
+                    </li>
+                    <li><strong>Don't mix formats:</strong> Stick to either "Allocation to" or "Transfer for" based on
+                        goal type</li>
+                </ul>
+
+                <h4>Example Scenarios</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Goal Name</th>
+                            <th>Transaction Note</th>
+                            <th>Will Match?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emergency Fund</td>
+                            <td>"Allocation to Emergency Fund"</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency Fund</td>
+                            <td>"Allocation to emergency fund"</td>
+                            <td>✅ Yes (case-insensitive)</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency Fund</td>
+                            <td>"Allocation to car service"</td>
+                            <td>❌ No (different goal)</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency Fund</td>
+                            <td>"Allocation to Fund"</td>
+                            <td>❌ No (partial name)</td>
+                        </tr>
+                        <tr>
+                            <td>car service</td>
+                            <td>"Allocation to car service"</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tip-box">
+                    <strong>💡 Pro Tip:</strong> Always use the built-in "Quick Fund" or "Log Transfer" buttons to avoid
+                    manual errors. The system handles the formatting automatically!
+                </div>
             </section>
 
             <section id="reports" class="doc-section">

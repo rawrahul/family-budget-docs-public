@@ -38,11 +38,14 @@
                 <li><a href="#accounts">3. Accounts Management</a></li>
                 <li><a href="#transactions">4. Transactions</a></li>
                 <li><a href="#ai-upload">5. AI Statement Upload & Insights</a></li>
-                <li><a href="#budget-limits">6. Budget Limits</a></li>
-                <li><a href="#savings-goals">7. Savings Goals</a></li>
-                <li><a href="#reports">8. Reports</a></li>
-                <li><a href="#family">9. Family Sharing</a></li>
-                <li><a href="#settings">10. Settings</a></li>
+                <li><a href="#magic-drop">6. Magic Drop Automation</a></li>
+                <li><a href="#spending-trends">7. Spending Trends</a></li>
+                <li><a href="#budget-limits">8. Budget Limits</a></li>
+                <li><a href="#savings-goals">9. Savings Goals</a></li>
+                <li><a href="#reports">10. Reports</a></li>
+                <li><a href="#family">11. Family Sharing</a></li>
+                <li><a href="#settings">12. Settings</a></li>
+                <li><a href="#security-vault">13. Security & Password Vault</a></li>
             </ul>
         </aside>
 
@@ -206,7 +209,23 @@
                     <li>Choose <strong>status:</strong> Active or Paused</li>
                 </ol>
 
-                <h3>4.4 Data Export (Premium)</h3>
+                <h3>4.4 Smart Global Cache & Overrides</h3>
+                <p>To save you time, the app uses a <strong>Global Merchant Cache</strong> that learns from all users.
+                    If many users categorize "Uber" as "Transport", it will be default for you too.</p>
+                <ul>
+                    <li><strong>User Overrides:</strong> If you prefer a different category, just change it once. The
+                        app will
+                        "remember" your preference for all future transactions from that merchant.</li>
+                    <li><strong>Bulk Override:</strong> When editing a transaction, check the <strong>"Update all future
+                            transactions"</strong> box to apply your category correction globally across your account.
+                    </li>
+                </ul>
+                <div class="info-box">
+                    <strong>🔒 Privacy Note:</strong> Metadata like amounts and dates are never shared. Only the
+                    <em>Merchant Name → Category</em> mapping is stored in the Global Cache.
+                </div>
+
+                <h3>4.5 Data Export (Premium)</h3>
                 <p>Need to analyze data in Excel? You can export your filtered view.</p>
                 <ol>
                     <li>Go to the <strong>Transaction Audit</strong> tab.</li>
@@ -237,43 +256,67 @@
                     <li>You review and confirm</li>
                 </ol>
 
-                <h3>5.2 Please Note on Uploads</h3>
-                <p>Uploads are subject to a usage limit (15 statements/month for Solo, 30 for Family).</p>
-
-                <h3>5.3 Validation & Scoring</h3>
-                <div class="warning-box">
-                    <strong>⚠️ Requirement:</strong> Statement must have an <strong>Account Summary</strong> table
-                    (Opening/Closing Balance).
-                </div>
-                <ul>
-                    <li><strong>100% Score:</strong> Perfect match (Opening Balance + Transactions = Closing Balance).
-                    </li>
-                    <li><strong>&lt; 70% Score:</strong> Summary likely missing. Manually check transaction counts and
-                        categories.</li>
-                    <li><strong>Correction:</strong> If score is low, delete the statement and retry. Max 3 attempts
-                        recommended.</li>
-                </ul>
-
-                <h3>5.4 🧠 AI Insights</h3>
+                <h3>5.2 🧠 AI Insights</h3>
                 <p>Premium members get a personalized financial analysis, refreshed every 24 hours.</p>
                 <img src="assets/images/ai-insights.png" alt="AI Insights" class="doc-image">
                 <div class="tip-box">
                     <strong>💡 Note:</strong> Insights are cached for 24 hours for efficiency.
                 </div>
-                <p>The AI provides 4 key insights:</p>
+            </section>
+
+            <section id="magic-drop" class="doc-section">
+                <h2>6. Magic Drop Automation (Premium)</h2>
+                <p>Trigger an <strong>Invisible Sync</strong> of your statements by connecting a Google Drive folder.
+                </p>
+
+                <h3>6.1 Setup Instructions</h3>
+                <ol>
+                    <li>Create a folder named <strong>"MagicDrop"</strong> in your Google Drive.</li>
+                    <li>Share the folder with our service bot as an <strong>Editor</strong> (find the bot email in
+                        Settings → Magic Drop).</li>
+                    <li>Paste the folder link into the Magic Drop settings in the app.</li>
+                    <li><strong>Drop and Forget:</strong> Any statement dropped into this folder will be processed
+                        automatically every 60 seconds.</li>
+                </ol>
+
+                <div class="success-box">
+                    <strong>🔒 The "Jailed Bot" Security Model</strong>
+                    <p>Our bot can only see the specific folder you share with it. It is blind to the rest of your
+                        Drive.
+                        You can evict the bot and kill the connection instantly by removing its access in your
+                        Google Drive settings at any time.</p>
+                </div>
+
+                <h3>6.2 Processing Preferences</h3>
+                <p>Customize how Magic Drop handles your files in <strong>Settings → Magic Drop</strong>:</p>
                 <ul>
-                    <li>🎉 <strong>Positive Observation:</strong> Celebrates good habits (e.g., "High Savings Rate!").
-                    </li>
-                    <li>⚠️ <strong>Concern/Opportunity:</strong> Highlights areas to improve (e.g., "Dining Out is 40%
-                        of spend").</li>
-                    <li>💡 <strong>Actionable Tip:</strong> A specific recommendation (e.g., "Try the 50/30/20 rule").
-                    </li>
-                    <li>🎯 <strong>Goal Status:</strong> Updates you on funded vs. pending goal allocations.</li>
+                    <li><strong>Enable Magic Drop:</strong> Toggle the entire automation on/off.</li>
+                    <li><strong>Silent Import:</strong> Process files quietly without sending a notification for every
+                        success.</li>
+                    <li><strong>Auto-Decrypt:</strong> Enable the app to attempt unlocking PDFs using your stored
+                        passwords.</li>
+                </ul>
+            </section>
+
+            <section id="spending-trends" class="doc-section">
+                <h2>7. Spending Trends (Premium)</h2>
+                <p>Long-term visibility into your financial health across multiple pay cycles.</p>
+
+                <h3>7.1 The 5+1 Logic</h3>
+                <p>The Trends dashboard displays your last 5 completed pay cycles plus your current cycle.
+                    This allows for real-time comparison against your recent historical average.</p>
+
+                <h3>7.2 Trend Modes</h3>
+                <ul>
+                    <li><strong>Wealth Gap:</strong> Analysis of your Income vs Expenses over time.</li>
+                    <li><strong>Safety Net:</strong> Overview of your savings and emergency fund buildup.</li>
+                    <li><strong>AI Trend Insights:</strong> Deep-dive analysis of your 6-month patterns, highlighting
+                        long-term wins and areas for optimization.</li>
                 </ul>
             </section>
 
             <section id="budget-limits" class="doc-section">
-                <h2>6. Budget Limits</h2>
+                <h2>8. Budget Limits</h2>
                 <p>Set monthly spending limits for each category and track your progress.</p>
                 <img src="assets/images/budget-limits.png" alt="Budget Limits" class="doc-image">
                 <p class="doc-image-caption">Visual progress bars for category budgets</p>
@@ -282,7 +325,7 @@
             </section>
 
             <section id="savings-goals" class="doc-section">
-                <h2>7. Savings Goals</h2>
+                <h2>9. Savings Goals</h2>
                 <p>Set financial goals and track your progress automatically.</p>
 
                 <div class="tip-box">
@@ -290,20 +333,20 @@
                     (e.g., "Transfer to Aesop Settings").
                 </div>
 
-                <h3>7.1 Physical vs Virtual Goals</h3>
+                <h3>9.1 Physical vs Virtual Goals</h3>
                 <p>See <a href="getting-started.html#step6">Getting Started</a> for a detailed comparison.</p>
 
                 <img src="assets/images/savings-goals.png" alt="Savings Goals" class="doc-image">
                 <p class="doc-image-caption">Track your savings goals progress</p>
 
-                <h3>7.2 Dashboard Pinning</h3>
+                <h3>9.2 Dashboard Pinning</h3>
                 <p>Want to see a goal's progress every time you log in?</p>
                 <ul>
                     <li>On the Savings Goals page, check the <strong>"Dashboard"</strong> box on any goal card.</li>
                     <li>The goal's progress bar will appear on your main Dashboard for quick access.</li>
                 </ul>
 
-                <h3>7.3 History & Visualization</h3>
+                <h3>9.3 History & Visualization</h3>
                 <ul>
                     <li><strong>Cycle History:</strong> In the Savings Goals page, see a complete history of every
                         cycle's allocation status (Funded/Pending).</li>
@@ -311,19 +354,19 @@
                         "Mental Vault" to see exactly how your checking account balance is allocated.</li>
                 </ul>
 
-                <h3>7.4 Physical Goal Actions</h3>
+                <h3>9.4 Physical Goal Actions</h3>
                 <ul>
                     <li><strong>⚡ Fund Transfer:</strong> Log a manual transfer you made.</li>
                     <li><strong>Important:</strong> If the transaction exists in your statement, <strong>uncheck "Source
                             Side"</strong> to avoid duplicates.</li>
                 </ul>
 
-                <h3>7.5 Virtual Goal Actions</h3>
+                <h3>9.5 Virtual Goal Actions</h3>
                 <ul>
                     <li><strong>⚡ Quick Fund:</strong> Allocate money (creates internal ledger entry).</li>
                 </ul>
 
-                <h3>7.6 Best Practices for Goal Matching</h3>
+                <h3>9.6 Best Practices for Goal Matching</h3>
                 <div class="warning-box">
                     <strong>⚠️ IMPORTANT:</strong> To ensure transactions are matched to the correct goal, follow these
                     naming conventions!
@@ -411,12 +454,12 @@
             </section>
 
             <section id="reports" class="doc-section">
-                <h2>8. Reports</h2>
+                <h2>10. Reports</h2>
                 <p>Analyze your spending habits with visual reports.</p>
                 <img src="assets/images/advanced-reports.png" alt="Advanced Reports" class="doc-image">
                 <p class="doc-image-caption">Deep dive into spending trends and category analysis</p>
 
-                <h3>8.1 Free vs Premium Reports</h3>
+                <h3>10.1 Free vs Premium Reports</h3>
                 <table>
                     <thead>
                         <tr>
@@ -456,12 +499,12 @@
             </section>
 
             <section id="family" class="doc-section">
-                <h2>9. Family Sharing</h2>
+                <h2>11. Family Sharing</h2>
                 <p>Collaborate on budgets with up to 5 family members. Available on both Free and Premium plans!</p>
                 <img src="assets/images/family-settings.png" alt="Family Management" class="doc-image">
                 <p class="doc-image-caption">Manage your family members and roles</p>
 
-                <h3>9.1 Compare Family Plans</h3>
+                <h3>11.1 Compare Family Plans</h3>
                 <table>
                     <thead>
                         <tr>
@@ -514,8 +557,39 @@
             </section>
 
             <section id="settings" class="doc-section">
-                <h2>10. Settings</h2>
+                <h2>12. Settings</h2>
                 <p>Customize your account and preferences. (Email, Password, Pay Cycle, Subscription).</p>
+            </section>
+
+            <section id="security-vault" class="doc-section">
+                <h2>13. Security & Password Vault</h2>
+                <p>Manage passwords for encrypted bank statements securely.</p>
+
+                <h3>13.1 Why use a Vault?</h3>
+                <p>Many banks password-protect PDF statements. To allow Magic Drop to work while you're away,
+                    the app needs a way to unlock these files. We use a secure vault to store these keys.</p>
+
+                <div class="info-box">
+                    <strong>📍 Logic:</strong>
+                    <ul>
+                        <li><strong>Manual Upload:</strong> If you upload an encrypted PDF, the app looks in your vault.
+                            If no match is found, it will ask you for the password.</li>
+                        <li><strong>Magic Drop:</strong> The app automatically uses vault passwords to "auto-decrypt"
+                            files during the background sync.</li>
+                    </ul>
+                </div>
+
+                <h3>13.2 Privacy & Encryption</h3>
+                <p>Your privacy is our highest priority:</p>
+                <ul>
+                    <li><strong>At Rest:</strong> Passwords are encrypted in our database using industry-standard
+                        AES-256.</li>
+                    <li><strong>In-Memory:</strong> Passwords are only decrypted for a few milliseconds during the
+                        actual
+                        file processing and are never stored in plain text.</li>
+                    <li><strong>Ownership:</strong> Your passwords are private to your account and are never shared with
+                        other users or family members.</li>
+                </ul>
             </section>
 
             <div class="help-box">

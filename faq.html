@@ -126,31 +126,55 @@
                 </ul>
 
                 <h3>How accurate is the AI categorization?</h3>
-                <p><strong>95%+ accuracy</strong> on standard bank statements. Our <strong>Vision-First
-                        approach</strong> means:</p>
+                <p><strong>95%+ accuracy</strong> on standard bank statements. Our <strong>Smart Categorization</strong>
+                    system uses two layers:</p>
                 <ul>
-                    <li><strong>Real-time AI analysis:</strong> Every transaction is analyzed fresh by Google Gemini
-                    </li>
-                    <li><strong>Context-aware:</strong> AI "sees" the full statement layout, not just text</li>
-                    <li><strong>Smart learning:</strong> Analyzes transaction descriptions, merchant names, and amount
-                        patterns</li>
-                    <li><strong>No caching:</strong> Each categorization uses the latest AI model for maximum accuracy
-                    </li>
+                    <li><strong>Layer 1: Smart Global Caching:</strong> We instantly recognize millions of
+                        common stores (like Amazon, Starbucks, etc.) for zero-latency categorization.</li>
+                    <li><strong>Layer 2: Vision-First AI:</strong> Any unknown merchants are analyzed fresh by
+                        Google Gemini using the full context of the statement.</li>
                 </ul>
                 <div class="tip-box">
-                    <strong>💡 Why Vision-First?</strong> Traditional text extraction misses visual cues like table
-                    structure and formatting. Our AI "sees" your statement like a human, resulting in higher accuracy.
+                    <strong>💡 Why Vision-First?</strong> Traditional text extraction misses visual cues. Our AI "sees"
+                    your statement like a human, resulting in higher accuracy for unknown merchants.
                 </div>
+
+                <h3>What is User Bulk Override?</h3>
+                <p>If the AI or the Global Cache gets a category wrong, you can fix it manually. When you do,
+                    check <strong>"Update all future transactions"</strong> to create a
+                    <strong>User Bulk Override</strong>. This ensures your personal preference takes priority
+                    over the Global Cache for that merchant permanently.
+                </p>
+
+                <h3>What is "Magic Drop" Automation?</h3>
+                <p>Magic Drop allows you to sync your statements "invisibly" by connecting a Google Drive folder.
+                    Any PDF/image dropped in that folder is automatically processed and categorized every 60 seconds.
+                </p>
+
+                <div class="success-box">
+                    <strong>🔒 The "Jailed Bot" Security Model</strong>
+                    <p>Our automation bot is blind to your entire Drive EXCEPT for the specific folder you share.
+                        You can evict the bot and kill the connection instantly at any time.</p>
+                </div>
+
+                <h3>How are password-protected PDFs handled?</h3>
+                <p>We provide a <strong>Security Vault</strong> where you can safely store bank statement passwords.
+                    These keys are <strong>encrypted at rest (AES-256)</strong> and only used in-memory to unlock
+                    files during the sync process.</p>
 
                 <h3>Which banks/statements do you support?</h3>
                 <p><strong>ANY bank</strong> that provides PDF or image statements! We've tested:</p>
                 <ul>
                     <li>✅ Chase, Bank of America, Wells Fargo (USA)</li>
                     <li>✅ Barclays, HSBC, Lloyds, Monzo (UK)</li>
-                    <li>✅ ICICI, HDFC, SBI (India)</li>
-                    <li>✅ And 100+ more worldwide...</li>
+                    <li>✅ Revolut, Wise, Monzo (Digital Banks)</li>
                 </ul>
                 <p>If it's a PDF/image with transactions, we can process it!</p>
+
+                <h3>What are Spending Trends?</h3>
+                <p>Spending Trends provide a long-term view of your financial health using a <strong>5+1 logic</strong>:
+                    it compares your last 5 completed pay cycles to your current cycle to spot patterns, wealth gaps,
+                    and safety net trends.</p>
 
                 <h3>Do you support credit card statements?</h3>
                 <p>Yes! We automatically detect credit card vs bank account statements and apply the correct accounting
